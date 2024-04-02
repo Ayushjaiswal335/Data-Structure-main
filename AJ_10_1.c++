@@ -3,7 +3,6 @@ using namespace std;
 
 void reverseAlternet(int arr[],int size){
 
-int count=0;
 for (int i = 1; i < size; i=i+2)
 {
       if (i + 1 < n){
