@@ -56,4 +56,7 @@ int main(){
         cout << "the index of first occurence of 3 is " <<  firstOcc(even,10,3) << endl;
         cout << "the index of last occurence of 3 is " <<  lastOcc(even,10,3) << endl;
 
+        // total number of occurence
+        cout << "total number of occurence of 3 is" << (lastOcc(even,10,3)-firstOcc(even,10,3))+1;
+
 }
