@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// find the peek of an sorted array
+
 int binarySearch(int arr[], int size)
 {
 
