@@ -51,12 +51,12 @@ double morePrecision(int n,int precision,int tempsol){
 }
 
 int main(){
-        int n;
-        cout << "Enter your number" << endl;
+        int number;
+        cout << "Enter your number" << endl ; 
 
-        cin >> n;
+        cin >> number;
 
-        int tempsol = sqrtInteger(n);
+        int tempsol = sqrtInteger(number);
         // cout << tempsol; 
 
         cout << "Anser is " << morePrecision(n , 3 ,tempsol) << endl;
