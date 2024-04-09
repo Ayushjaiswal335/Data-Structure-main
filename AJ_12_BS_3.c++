@@ -24,3 +24,4 @@ int main()
 
         cout << "Pivot is " << getPivot(arr,5);
 }
+  
