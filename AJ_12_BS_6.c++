@@ -21,7 +21,6 @@ bool isPossible(int n, int m, vector<int> time,int mid){
 	}
 	return true;
 }
-
 long long ayushGivesNinjatest(int n, int m, vector<int> time) 
 {	
 	int start  = 0;

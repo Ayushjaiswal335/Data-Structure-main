@@ -13,7 +13,7 @@ int binarySearch(int arr[], int size)
 
         while (start < end)
         {
-                if (arr[mid] < arr[mid+1])
+                if (arr[mid] <= arr[mid+1])
                 {
                         start=mid+1;
                 }
@@ -35,7 +35,7 @@ int main()
         // int odd[5] = {1, 4, 8, 13, 25};
 
         int result = binarySearch(even, 8);
-        cout << "Index of 12 is " << result;
+        cout << "Index of 18 is " << result;
          
         return 0 ;
 }
