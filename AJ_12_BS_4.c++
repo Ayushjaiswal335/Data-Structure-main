@@ -1,5 +1,5 @@
  
-//  Search an Element in a Sorted & Rotated array using Binary Search
+//  Search an Element in a Sorted Rotated array using Binary Search
  
  int getPivot(vector<int>& arr,int n){
         int s=0,e=arr.size()-1;
