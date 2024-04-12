@@ -2,39 +2,39 @@
 
 // book allocation problem
 
-bool isPossible(int n, int m, vector<int> time,int mid){
+bool isPossible(int n, int m, vector<int> arr,int mid){
 	int studentCount = 1;
 	int pageSum = 0;
 
 	for(int i=0;i<n; i++){
-		if(pageSum + time[i] <=mid)
+		if(pageSum + arr[i] <=mid)
 		{
-			pageSum+=time[i];
+			pageSum+=arr[i];
 		}
 		else{
 			studentCount++;
-			if(studentCount > m || time[i]>mid){
+			if(studentCount > m || arr[i]>mid){
 				return false;
 			}
-			pageSum = time[mid];
+			pageSum = arr[mid];
 		}
 	}
 	return true;
 }
-long long ayushGivesNinjatest(int n, int m, vector<int> time) 
+long long ayushGivesNinjatest(int n, int m, vector<int> arr) 
 {	
 	int start  = 0;
 	int sum = 0;
 	
 	for(int i = 0; i< n ; i++){
-		sum +=time[i];
+		sum +=arr[i];
 	}
 	int end = sum;
 	int ans = -1;
 	int mid = start+ (end-start)/2;
 
 	while(start<=end){
-		if(isPossible(n,m,time,mid))
+		if(isPossible(n,m,arr,mid))
 		{
 			ans = mid;
 			end = mid-1;
