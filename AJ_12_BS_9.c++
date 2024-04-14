@@ -8,7 +8,7 @@ using namespace std;
 bool ispossible(vector<int> &arr, int n, int m, int mid)
 {
 	int sum = 0;
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n ; i++)
 	{
 		if (arr[i] > mid)
 		{
