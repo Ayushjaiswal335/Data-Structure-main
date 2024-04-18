@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
-int sum(int num[],int n){
-int sum=0;
-for (int i = 0; i < n; i++)
+int sum(int num[], int n)
 {
-    sum=sum+num[i];
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum = sum + num[i];
+    }
+    return sum;
 }
-return sum;
 
+int main()
+{
 
-}
+    int num[5] = {2, 7, 1, -4, 11};
 
-int main(){
+    int result = sum(num, 5);
 
-int num[5]={2,7,1,-4,11};
-
-int result=sum(num,5);
-
-cout << result;
+    cout << result;
 }
